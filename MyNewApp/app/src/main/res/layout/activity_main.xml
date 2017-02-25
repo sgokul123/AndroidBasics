@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    android:background="@android:color/holo_blue_bright"
+    tools:context="com.bridgelabz.mynewapp.MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/new10"
+        android:id="@+id/imageView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="27dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:id="@+id/editTextPass"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text=""
+        android:textAlignment="center"
+        android:hint="Enter User Id/ Name"
+        android:textSize="30dp"
+        android:ems="10"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginBottom="37dp"
+        android:id="@+id/editTextId"
+        android:layout_above="@+id/editTextPass"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLogin"
+        android:layout_marginStart="59dp"
+        android:layout_alignBaseline="@+id/buttonadd"
+        android:layout_alignBottom="@+id/buttonadd"
+        android:layout_toEndOf="@+id/buttonadd" />
+
+    <Button
+        android:text="SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonadd"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="47dp"
+        android:layout_below="@+id/editTextPass"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/buttonclose"
+        android:background="@drawable/close"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
